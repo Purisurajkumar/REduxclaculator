@@ -1,10 +1,13 @@
 import React from "react";
 import Find from "./component";
-import './App.css';
+import { Provider } from "react-redux";
+import Store from "./Store";
 
 function App() {
   return (
+    <Provider store={Store}>
     <Find/>
+    </Provider>
   );
 }
 
